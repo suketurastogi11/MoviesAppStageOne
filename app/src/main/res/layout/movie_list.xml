@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suketurastogi.moviesappstageone.MovieListActivity">
+
+    <TextView
+        android:id="@+id/no_data_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:text="@string/no_movie_available"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/no_movie_available_size" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_movie_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <GridView
+        android:id="@+id/movie_list_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
