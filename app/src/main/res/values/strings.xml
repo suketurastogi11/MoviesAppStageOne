@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">MoviesAppStageOne</string>
 
+    // Have to Add API Keys in line number 9, 10, 27
+
     <string name="no_movie_available">No Movies Available</string>
 
     <array name="movie_list_entry_values">
-        <item>https://api.themoviedb.org/3/movie/popular?api_key=43d9acd69d89a17ea511560736c1e6b8</item>
-        <item>https://api.themoviedb.org/3/movie/top_rated?api_key=43d9acd69d89a17ea511560736c1e6b8</item>
+        <item>https://api.themoviedb.org/3/movie/popular?api_key=</item>
+        <item>https://api.themoviedb.org/3/movie/top_rated?api_key=</item>
     </array>
 
     <array name="movie_list_entries">
@@ -22,6 +24,6 @@
     <string name="settings_menu_icon_text">Settings</string>
     <string name="setting_menu_option_movie_sort_order">Sort Order</string>
     <string name="setting_menu_option_movie_sort_order_key">sortOrder</string>
-    <string name="setting_menu_option_movie_sort_order_default_value">https://api.themoviedb.org/3/movie/top_rated?api_key=43d9acd69d89a17ea511560736c1e6b8</string>
+    <string name="setting_menu_option_movie_sort_order_default_value">https://api.themoviedb.org/3/movie/top_rated?api_key=</string>
 
 </resources>
